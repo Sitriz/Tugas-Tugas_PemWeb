@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Membuat Form</title>
+</head>
+<body>
+    <h3 align="center">Mahasiswa SI01 NF</h3>
+    <h4 align="center">
+        <a href="">Home ></a>
+        <a href="">Mahasiswa ></a>
+        <a href="">Daftar ></a>
+    </h4>
+    <div style="text-align: center;">
+        Cari nama Mahasiswa:
+        <input type="text" name="search" placeholder="search" style="border-radius: 10px; border:1px solid black">
+        <img src="search.jpg" alt="" width="15">
+    </div>
+    <br>
+    <div style="background-color: black; color: white; height: 50px;">
+        <table align="center" cellpadding="15px">
+            <tr>
+                <td>Daftar Karyawan</td>
+                <td>Master Data</td>
+                <td>Tambah Data</td>
+            </tr>
+        </table>
+    </div>
+    <!-- fieldset & legend -->
+    <fieldset>
+        <legend>Formulir Daftar STTNf</legend>
+        <div style="display: flex; margin-left:150px ;">
+            <!-- aside -->
+            <aside>
+                <form action="" method="POST"></form>
+                <table>
+                    <tr>
+                        <td>Name</td>
+                        <td><input type="text" name="name" placeholder="Enter Name"></td>
+                    </tr>
+                    <tr>
+                        <td>Desc:</td>
+                        <td><textarea name="description" placeholder="Enter description" cols="30" rows="5"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td>Hobi:</td>
+                        <td>
+                            <select>
+                                <option value="futsal">Futsal</option>
+                                <option value="voli">Voli</option>
+                                <option value="jogging">Jogging</option>
+                                <option value="badminton">Badminton</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Transaksi</td>
+                        <td>
+                            <input type="checkbox" name="permit" value="mobile">Phone
+                            <input type="checkbox" name="permit" value="mobile">Email
+                            <input type="checkbox" name="permit" value="mobile">E Wallet
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Jenis Kelamin</td>
+                        <td>
+                            <input type="radio" name="jk" value="l">Lanang
+                            <input type="radio" name="jk" value="p">Wadon
+                            <input type="radio" name="jk" value="lw">LanangWadon
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Umur</td>
+                        <td><input type="number" name="umur" min="1"></td>
+                    </tr>
+                    <tr>
+                        <td>Email</td>
+                        <td><input type="email" name="email" placeholder="Enter email"></td>
+                    </tr>
+                    <tr>
+                        <td>Tanggal</td>
+                        <td><input type="data" name="tgl"></td>
+                    </tr>
+                    <tr>
+                        <td>Web</td>
+                        <td><input type="text" name="web" placeholder="http://"></td>
+                    </tr>
+                    <tr>
+                        <td>Upload</td>
+                        <td><input type="file" name="upload"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="submit" name="proses" value="Simpan" style="box-shadow: 4px 3px 2px black; background-color: blue; color: white;"></td>
+                        <td><input type="reset" name="unproses" value="Batal" style="box-shadow: 4px 3px 2px black; background-color: red; color: white;"></td>
+                    </tr>
+                </table>
+            </aside>
+            <!-- article -->
+            <article style="margin-left: 200px;">
+                <table>
+                    <tr>
+                        <td>Name</td>
+                        <td><input type="text" name="name" placeholder="Enter Name"></td>
+                    </tr>
+                    <tr>
+                        <td>Desc:</td>
+                        <td><textarea name="description" placeholder="Enter description" cols="30" rows="5"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td>Hobi:</td>
+                        <td>
+                            <select>
+                                <option value="futsal">Futsal</option>
+                                <option value="voli">Voli</option>
+                                <option value="jogging">Jogging</option>
+                                <option value="badminton">Badminton</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Transaksi</td>
+                        <td>
+                            <input type="checkbox" name="permit" value="mobile">Phone
+                            <input type="checkbox" name="permit" value="mobile">Email
+                            <input type="checkbox" name="permit" value="mobile">E Wallet
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Jenis Kelamin</td>
+                        <td>
+                            <input type="radio" name="jk" value="l">Lanang
+                            <input type="radio" name="jk" value="p">Wadon
+                            <input type="radio" name="jk" value="lw">LanangWadon
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Umur</td>
+                        <td><input type="number" name="umur" min="1"></td>
+                    </tr>
+                    <tr>
+                        <td>Email</td>
+                        <td><input type="email" name="email" placeholder="Enter email"></td>
+                    </tr>
+                    <tr>
+                        <td>Tanggal</td>
+                        <td><input type="data" name="tgl"></td>
+                    </tr>
+                    <tr>
+                        <td>Web</td>
+                        <td><input type="text" name="web" placeholder="http://"></td>
+                    </tr>
+                    <tr>
+                        <td>Upload</td>
+                        <td><input type="file" name="upload"></td>
+                    </tr>
+                        <tr>
+                            <td><input type="submit" name="proses" value="Simpan" style="box-shadow: 4px 3px 2px black; background-color: blue; color: white;"></td>
+                            <td><input type="reset" name="unproses" value="Batal" style="box-shadow: 4px 3px 2px black; background-color: red; color: white;"></td>
+                        </tr>
+                </table>
+
+                </form>
+            </article>            
+        </div>
+        <hr>
+        <main style="display: flex;">
+            <div>
+                <form action="" method="POST" enctype="multipart/form-data">
+                    <img width="200px" src="burung2.png" alt="">
+                    <br>
+                    <input type="file" name="foto" placeholder="upload foto">
+                </form>
+            </div>
+            <div>
+                <p align="center">Cerita</p>
+                <p align="justify">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis nesciunt necessitatibus, beatae eos consequuntur cumque exercitationem adipisci ut asperiores perspiciatis veritatis veniam quo dignissimos sit, id, excepturi quasi illum explicabo.
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi quas sequi repellat consequuntur culpa aut, tenetur molestiae exercitationem iusto voluptatem distinctio esse repellendus, perferendis, magnam minus maxime sapiente qui. Numquam.
+                </p>
+            </div>
+
+        </main>
+        <hr>
+        <footer style="display: flex; justify-content: space-evenly; background-color: greenyellow;">
+            <div>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/R0OezRPmy6Q?si=Ua44QPYHrbzWaPJQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              
+                </video>
+            </div>
+            <fieldset>
+                <img src="burung1.png" width="100" height="75" alt="">
+                <img src="burung2.png" width="100" height="75" alt="">
+                <br>
+                <img src="burung3.png" width="100" height="75" alt="">
+                <img src="burung4.png" width="100" height="75" alt="">
+            </fieldset>
+            <fieldset>
+                <legend>Lampiran</legend>
+                <a href="burung1.png" download="burung1.png">download_burung1</a><br>
+                <a href="burung2.png" download="burung2.png">download_burung2</a><br>
+                <a href="burung3.png" download="burung3.png">download_burung3</a><br>
+                <a href="burung4.png" download="burung4.png">download_burung4</a>
+            </fieldset>
+        </footer>
+
+</fieldset>
+</body>
+</html>

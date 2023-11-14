@@ -4,55 +4,72 @@
         <title>Burung Perkutut Jawa</title>
         <meta name="description" content="Budidaya Perkutut Jawa">
         <style>
-            body {
-                background-color: beige;
+            img {
+                width: 20%;
             }
-            h1 {
-                background-color: rgb(241, 193, 201);
-                color:rgb(212, 247, 247);
+            body{
+                background-color: rgb(207, 116, 131);
+            }
+            h1{
+                background-color: rgb(240, 180, 190);
+                color: rgb(177, 126, 134);
+            }
+            h3 {
+                background-color: rgb(230, 174, 184);
             }
             blockquote{
-                background-color:rgb(241, 193, 201);
+                background-color: rgb(222, 161, 171);
             }
             .gambar, img{
-                text-align: center;
-                width: 25%;
+            text-align: center;
             }
             h1 {
-                text-align:center;        
+            text-align:center;        
             }
             blockquote{
                 text-align: center;
             }
-            p{
-               text-align: justify;
+            ul.menu{
+            text-align:center;
+            background-color:gainsboro;
+            }
+            li.href{
+            display:inline;
+            }
+            p {
+            text-align: justify;
             }
             h3{
+            text-align: left;
+            }
+            li, h4 {
                 text-align: left;
             }
             h4 {
-                text-align: left;
+            text-align: center;
             }
             .profile, li{
-                text-align: left;
+            text-align: left;
             }
-            .koleksi, div{
+            .koleksi, div {
                 text-align: center;
             }
-            .promo, h3{
+            .promo,  h3 {
                 text-align: center;
             }
-            .kolekai {
-                width: 20%;
+            .ecommerce {
+                display: inline;
             }
-            .gambar {
-                width: 20%;
+            .aplikasi {
+                background-color: rgb(133, 87, 94);
             }
-
-
+            .harga, h3 {
+                text-align: center;
+            }
         </style>
     </head>
     <body>
+        <fieldset>
         <div id="header">
             <h1>Perkutut Jawa Suara Emas Penghibur Hati</h1>
             <blockquote>
@@ -64,11 +81,11 @@ Aku mendengarkan Indonesia <br/>
             </blockquote>
         </div>
         <div>
-            <ul>
-            <li><a href="#profil">Profil</a></li>
-            <li><a href="#berternak">Budidaya</a></li>
-            <li><a href="#harga">Harga</a></li>
-            </ul>
+            <ul class="menu">
+                <li class="href"><a href="#profil">Profil</a></li>
+                <li class="href"><a href="#berternak">Budidaya</a></li>
+                <li class="href"><a href="#harga">Harga</a></li>
+                </ul>
 
         </div>
         <div class="gambar">
@@ -91,7 +108,7 @@ Aku mendengarkan Indonesia <br/>
         <div id="profil">
             
             <h3>Profil Perkutut Jawa</h3>
-            <a name="profil"></a>
+            <a name="profil"/>
             <ul>
                 <li>Burung perkutut jawa (Geopelia striata) atau dikenal juga sebagai perkutut lokal mempunyai tubuh ramping panjang berukuran sedang, sekitar 20-25 cm, ukuran ekor pendek dengan kepala membulat</li>
                 <li>Burung pemakan biji-bijian ini biasanya dipelihara oleh orang Jawa yang mempunyai sebagai burung kicauan karena suaranya yang khas dan dianggap membawa keberuntungan</li>
@@ -101,7 +118,7 @@ Aku mendengarkan Indonesia <br/>
         </div>
         <div id="beternak">
             <h3>Cara Berternak Perkutut Jawa</h3>
-            <a name="berternak"></a>
+            <a name="berternak"/>
             <ol>
                 <li><h4>Pemilihan Bibit</h4>
                     <p>
@@ -136,16 +153,18 @@ Aku mendengarkan Indonesia <br/>
                 Harga 1 Ekor Perkutut Remaja <del>Rp. 75.000</del> <br/>
                 Sekarang cukup <strong>Rp. 50.000</strong> saja!
                 <br/>
-                <a name="harga"></a>
-                Berminat hubung kami di <span id="Wa">WA - 123456789182</span>
+                <a name="harga"/>
+                Berminat hubung kami di <span id="Wa">WA - 012455588222</span>
             </h3>
             <h4>Kami Hadir juga di aplikasi eCommerce:</h4>
             <ol>
-                <li><a href="tokopedia.com">tokopedia</a></li>
-                <li><a href="bukakapak.com">Bukalapak</a></li>
-                <li><a href="shopee.com">shopee</a></li>
+                <ul class="aplikasi">
+                    <li class="ecommerce"><a href="tokopedia.com">tokopedia</a></li>
+                    <li class="ecommerce"><a href="bukakapak.com">Bukalapak</a></li>
+                    <li class="ecommerce"><a href="shopee.com">shopee</a></li>
+                <ul>
             </ol>
         </div>
-
+    </fieldset>
     </body>
 </html>
