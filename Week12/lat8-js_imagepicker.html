@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ganti Gambar</title>
+</head>
+<body>
+    <h2>Gamti Gambar Apapun</h2>
+    <label for="pilihgambar">Pilih Gambar</label>
+    <select for="pilihgambar" ochange="tampilgambar()">
+        <option value="burung">Burung</option>
+        <option value="ikan">Ikan</option>
+        <option value="kucing">Kucing</option>
+        <option value="marmut">Marmut</option>
+    </select>
+    <br>
+    <img src="gambar/gambar1.jpg" id="gambarpilihan" alt="kosong" width="300">
+    <script>
+        function tampilgambar(){
+            let nilaiterpilih = document.getElementById("pilihgambar").value;
+
+            //Menampilkan gambar sesuai dengan pilihan menu dropdown dengan SwitchCase
+            switch (nilaiterpilih){
+                case "burung":
+                    gambarpilihan.src = "gambar/gambar1.jpg";
+                case "ikan":
+                    gambarpilihan.src = "gambar/gambar3.jpg";
+                case "kucing":
+                    gambarpilihan.src = "gambar/gambar7.jpg";
+                case "marmut":
+                    gambarpilihan.src = "gambar/gambar5.jpg";
+                    break;
+            }
+        }
+    </script>
+</body>
+</html>

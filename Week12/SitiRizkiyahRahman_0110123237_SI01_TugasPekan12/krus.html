@@ -1,0 +1,106 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konversi Mata Uang</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        #converter {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+
+<div id="converter">
+    <h2>Konversi Mata Uang</h2>
+
+    <label for="currency">Pilih Mata Uang:</label>
+    <select id="currency" onchange="convertCurrency()">
+        <option value="usd">Dollar US</option>
+        <option value="sgd">Dollar Singapore</option>
+        <option value="myr">Ringgit Malaysia</option>
+        <option value="jpy">Yen Jepang</option>
+        <option value="eur">Euro</option>
+        <option value="sar">Riyal Arab Saudi</option>
+    </select>
+
+    Masukkan jumlah mata uang asing : <input type="number" id="jumlah_dollar" onchange="hitung_rupiah()">
+    <p>Nilai dalam Rupiah : <span id="nilai_rupiah"></span></p>
+
+    <script>
+        function hitung_rupiah() {
+            var amount = document.getElementById("amount").value;
+            var currency = document.getElementById("currency").value;
+            var rate;
+        }
+
+            switch (currency) {
+                case "usd":
+                    rate = 9915;
+                    break;
+                case "sgd":
+                    rate = 13472;
+            }
+    
+        function hitung_rupiah(){
+            const jumlah_dollarUs = document.getElementById("jumlah_dollar").value 
+            const kurs = 15600;
+
+            const nilai_rupiah = jumlah_dollarUs * kurs;
+            document.getElementById("nilai_rupiah").innerText = "Rp. "+nilai_rupiah;  
+        }
+        function hitung_rupiah(){
+            const jumlah_dollarSingapur = document.getElementById("jumlah_dollar").value 
+            const kurs = 12000;
+
+            const nilai_rupiah = jumlah_dollarSingapur * kurs;
+            document.getElementById("nilai_rupiah").innerText = "Rp. "+nilai_rupiah;  
+        }
+        function hitung_rupiah(){
+            const jumlah_ringgitMalaysia = document.getElementById("jumlah_dollar").value 
+            const kurs = 3400;
+
+            const nilai_rupiah = jumlah_ringgitMalaysia * kurs;
+            document.getElementById("nilai_rupiah").innerText = "Rp. "+nilai_rupiah;  
+        }
+        function hitung_rupiah(){
+            const jumlah_yenJepang = document.getElementById("jumlah_dollar").value 
+            const kurs = 10800;
+
+            const nilai_rupiah = jumlah_yenJepang * kurs;
+            document.getElementById("nilai_rupiah").innerText = "Rp. "+nilai_rupiah;  
+        }
+        function hitung_rupiah(){
+            const jumlah_euro = document.getElementById("jumlah_dollar").value 
+            const kurs = 17000;
+
+            const nilai_rupiah = jumlah_euro * kurs;
+            document.getElementById("nilai_rupiah").innerText = "Rp. "+nilai_rupiah;  
+        }
+        function hitung_rupiah(){
+            const jumlah_riyal = document.getElementById("jumlah_dollar").value 
+            const kurs = 4200;
+
+            const nilai_rupiah = jumlah_riyal * kurs;
+            document.getElementById("nilai_rupiah").innerText = "Rp. "+nilai_rupiah;  
+        }
+        </script>
+</div>
+</body>
+</html>

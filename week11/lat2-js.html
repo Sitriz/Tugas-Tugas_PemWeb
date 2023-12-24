@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan 2 JS</title>
+    <!-- Function digunakan untuk melakukan serangkaian komputasi / prosedur yang dapat digunakan berulang kali -->
+    <script>
+        function hello(){
+            let obj = document.getElementById("nurul");
+            obj.innerHTML = "<mark> Universitas Nurul Fikri <mark>";
+        }
+    </script>
+</head>
+<body>
+    <span id="nurul">Nurul Fikri</span>
+    <br>
+    <button onclick="hello()">Ubah</button>
+
+    <script>
+        document.write("<br><br>");
+        let  nama = "Budi";
+        let jk = "Pria";
+        let umur = 30;
+        // jawaban : nama saya <Budi> Kelamin saya <Pria> Umur <30>
+            document.write (" Nama saya "+ nama, " Kelamin saya "+ jk, " Umur "+ umur + " Tahun ");
+    </script>
+</body>
+</html>
